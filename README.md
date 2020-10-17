@@ -8,19 +8,19 @@
 
 ```markdown
 # api overview
-https://monkey-user-api.ridvanaltun.vercel.app/api
+https://monkeyuser-api.ridvanaltun.vercel.app/api
 
 # all comics
-https://monkey-user-api.ridvanaltun.vercel.app/api/comics/latest
+https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/latest
 
 # latest comic strip
-https://monkey-user-api.ridvanaltun.vercel.app/api/comics/latest
+https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/latest
 
 # random comic strip
-https://monkey-user-api.ridvanaltun.vercel.app/api/comics/random
+https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/random
 
 # 100th comic strip
-https://monkey-user-api.ridvanaltun.vercel.app/api/comics/100
+https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/100
 ```
 
 # Example Response (comic strip #223)
@@ -41,21 +41,21 @@ Just add `?img=true` end of url, like:
 
 ```markdown
 # latest comic strip image
-https://monkey-user-api.ridvanaltun.vercel.app/api/comics/latest?img=true
+https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/latest?img=true
 
 # random comic strip image
-https://monkey-user-api.ridvanaltun.vercel.app/api/comics/random?img=true
+https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/random?img=true
 
 # 1000th comic strip image
-https://monkey-user-api.ridvanaltun.vercel.app/api/comics/223?img=true
+https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/223?img=true
 ```
 
 ## Example: Latest Comic Strip
 
-![Latest Comic Strip](https://monkey-user-api.ridvanaltun.vercel.app/api/comics/latest?img=true)
+![Latest Comic Strip](https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/latest?img=true)
 
 ***How works?***
 
 ```markdown
-![Latest Comic Strip](https://monkey-user-api.ridvanaltun.vercel.app/api/comics/latest?img=true)
+![Latest Comic Strip](https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/latest?img=true)
 ```
