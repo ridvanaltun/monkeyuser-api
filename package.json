@@ -1,0 +1,39 @@
+{
+  "name": "monkeyuser-api",
+  "version": "1.0.0",
+  "description": "MonkeyUser API",
+  "main": "api/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ridvanaltun/monkeyuser-api.git"
+  },
+  "keywords": [
+    "monkeyuser",
+    "comics",
+    "comic",
+    "strip",
+    "api"
+  ],
+  "author": "Ridvan Altun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ridvanaltun/monkeyuser-api/issues"
+  },
+  "homepage": "https://github.com/ridvanaltun/monkeyuser-api#readme",
+  "dependencies": {
+    "@vercel/node": "^1.8.4",
+    "axios": "^0.20.0",
+    "xml2js": "^0.4.23"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "devDependencies": {
+    "vercel": "^20.1.2"
+  }
+}
