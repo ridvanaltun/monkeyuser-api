@@ -29,6 +29,7 @@ https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/100
 {
   "id": 223,
   "title": "Teamwork",
+  "description": "If we all are moving forward together, then success is guaranteed.",
   "published_at": "Fri, 16 Oct 2020 03:00:00 +0300",
   "link": "https://www.monkeyuser.com/2020/teamwork/",
   "image_url": "https://www.monkeyuser.com/assets/images/2020/192-teamwork.png"

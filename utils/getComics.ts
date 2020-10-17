@@ -2,6 +2,7 @@ import axios from "axios";
 import xml2js from "xml2js";
 
 const imageRegex = new RegExp('(?<=img src=")(.*)(?=" alt)', "s");
+const descriptionRegex = new RegExp(' title="(.*?)"', "s");
 
 const parser = new xml2js.Parser();
 
@@ -22,15 +23,18 @@ const getComics = () => {
           .parseStringPromise(response.data)
           .then(function (result) {
             const comics = result.rss.channel[0].item
-            // delete 147, there is no image
             let comicCount = comics.length
+
+            // delete 147, no image
             comics.splice(comicCount - 147, 1)
             comicCount--
+
             resolve(
               result.rss.channel[0].item.map((comic, index) => {
                 return {
                   id: comicCount - index,
                   title: comic.title[0],
+                  description: descriptionRegex.exec(comic.description)[1],
                   published_at: comic.pubDate[0],
                   link: comic.link[0],
                   image_url: execImage(comic.description),
