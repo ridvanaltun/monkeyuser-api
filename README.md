@@ -11,7 +11,7 @@
 https://monkeyuser-api.ridvanaltun.vercel.app/api
 
 # all comics
-https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/latest
+https://monkeyuser-api.ridvanaltun.vercel.app/api/comics
 
 # latest comic strip
 https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/latest
@@ -46,8 +46,8 @@ https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/latest?img=true
 # random comic strip image
 https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/random?img=true
 
-# 1000th comic strip image
-https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/223?img=true
+# 100th comic strip image
+https://monkeyuser-api.ridvanaltun.vercel.app/api/comics/100?img=true
 ```
 
 ## Example: Latest Comic Strip
