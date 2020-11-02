@@ -1,7 +1,7 @@
 import axios from "axios";
 import xml2js from "xml2js";
 
-const imageRegex = new RegExp('(?<=img src=")(.*)(?=" alt)', "s");
+const imageRegex = new RegExp('(?<=img src=")(.*)(?=" alt)', "u");
 const descriptionRegex = new RegExp(' title="(.*?)"', "s");
 
 const parser = new xml2js.Parser();
