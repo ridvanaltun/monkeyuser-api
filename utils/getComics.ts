@@ -14,6 +14,12 @@ const execImage = (str) => {
     : "";
 };
 
+const execDescriptionRegex = (str) => {
+  return descriptionRegex.test(str) && descriptionRegex.exec(str).length > 0
+    ? descriptionRegex.exec(str)[1]
+    : "";
+};
+
 const getComics = () => {
   return new Promise((resolve, reject) => {
     axios
@@ -34,7 +40,7 @@ const getComics = () => {
                 return {
                   id: comicCount - index,
                   title: comic.title[0],
-                  description: descriptionRegex.exec(comic.description)[1],
+                  description: execDescriptionRegex(comic.description),
                   published_at: comic.pubDate[0],
                   link: comic.link[0],
                   image_url: execImage(comic.description),
